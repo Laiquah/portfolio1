@@ -1,30 +1,33 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
-  <router-view/>
+  <div>
+    <Navbar/>
+    <Footer/>
+  </div>
 </template>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
+<script>
+import Footer from '@/components/Footer.vue'
+import Navbar from '@/components/Navbar.vue'
+import Home from '@/views/HomeView.vue'
+import About from '@/views/AboutView.vue'
+import Education from '@/views/EducationandskillsView.vue'
+import Project from '@/views/ProjectView.vue'
+import Testimonial from './views/TestimonialView.vue'
+import Contact from '@/views/ContactView.vue'
+  export default {
+    components: {
+      Navbar,
+      Footer,
+      Home,
+      About,
+      Education,
+      Project,
+      Testimonial,
+      Contact
+    }
+  }
+</script>
 
-nav {
-  padding: 30px;
-}
+<style scoped>
 
-nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-nav a.router-link-exact-active {
-  color: #42b983;
-}
 </style>

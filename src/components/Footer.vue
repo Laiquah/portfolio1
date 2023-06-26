@@ -1,6 +1,6 @@
 <template>
     <div>
-        <h1>About Me</h1>
+        Copyright &copy; 2023<br>
     </div>
 </template>
 
